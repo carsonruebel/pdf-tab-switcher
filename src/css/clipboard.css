@@ -1,0 +1,84 @@
+/* Container holding everything */
+.clipboard-widget-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Optional background image */
+  .clipboard-background {
+    width: 100%;
+    display: block;
+  }
+  
+
+
+
+
+  /* Toggle */
+  .tab-1-pdf, .tab-2-pdf {
+    width: 100%;
+    min-height: 100px; /* Allow embedder to determine height */
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+    }
+
+.tab-1-btn, .tab-2-btn {
+    /*align-items: center;*/
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+
+    /*display: inline-block;
+    padding: 0.5em;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #ddd; /* Default background */
+    color: black !important;  /* Text color */
+    border: 1px solid #bbb; /* Subtle border */
+    border-bottom: none; /* Removes bottom border to blend with iframe */
+    border-radius: 10px 10px 0 0;  /* Rounded top edges */
+    cursor: pointer;
+    /*position: relative;*/
+    z-index: 10;
+}
+
+/* Apply full transparency to inactive tabs */
+.inactive-tab {
+    /*background-color: transparent !important;*/
+    background-color: #ddd;
+    color: black !important; /* Keep text black */
+    font-weight: bold;
+}
+
+.active-tab {
+    /*background-color: transparent !important;*/
+    background-color: #fff;
+    color: black !important; /* Keep text black */
+    font-weight: bold;
+    z-index: 15; /* Ensures the active tab is on top */
+}
+
+/* Target the <a> inside active-tab to lighten it */
+.active-tab a {
+    background-color: #ffffff !important; /* Slightly lighter than default */
+    color: black !important; /* Keep text black */
+}
+
+
+.clipboard-spacer {
+    display: block;
+  }
+
+
+
+.auto-resize span {
+visibility: hidden;
+opacity: 0;
+}
