@@ -210,7 +210,7 @@ class Switcher_Widget extends Widget_Base {
             esc_attr($screen_class),
             esc_attr($extra_class),
             esc_attr($style),
-            $inner_html
+            wp_kses_post($inner_html)
         );
     }
 

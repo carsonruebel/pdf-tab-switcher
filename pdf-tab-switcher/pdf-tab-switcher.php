@@ -6,6 +6,8 @@
  * Author: Carson Ruebel
  * Text Domain: pdf-tab-switcher
  * Requires Plugins: elementor, pdf-embedder
+ * License: GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -44,7 +46,9 @@ final class PDF_Tab_Switcher_Plugin {
         // Register CSS Files
         wp_enqueue_style(
             'clipboard-style',
-            $css_base . ($is_dev ? 'clipboard.css' : 'clipboard.min.css')
+            $css_base . ($is_dev ? 'clipboard.css' : 'clipboard.min.css'),
+            [],
+            '1.0.0'
         );
     
         // Register JS Files
@@ -58,7 +62,7 @@ final class PDF_Tab_Switcher_Plugin {
     
         wp_enqueue_script(
             'tab-switcher-clipboard',
-            $js_base . ($is_dev ? 'clipboard.js' : 'clipboard.min.js'),
+            $js_base . ($is_dev ? 'clipboard_toggle.js' : 'clipboard_toggle.min.js'),
             ['jquery'],
             '1.0.0',
             true

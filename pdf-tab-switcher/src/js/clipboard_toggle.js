@@ -2,7 +2,7 @@
  * PDF Tab Switcher — Clipboard Interaction
  * Handles tab switching between two embedded PDF overlays in Elementor.
  *
- * @file clipboard.js
+ * @file clipboard_toggle.js
  * @author Carson Ruebel
  * @license GPL-2.0+
  * @since 1.0.0
